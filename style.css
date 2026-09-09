@@ -1,0 +1,521 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+
+    background-color: #111827;
+
+    padding: 18px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 27px;
+
+    font-weight: bold;
+
+    color: #ffffff;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* ================= HOME ================= */
+
+.home {
+    min-height: 92vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #ffffff
+    );
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+.profile-photo {
+    width: 170px;
+
+    height: 170px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid #0ea5e9;
+
+    margin-bottom: 20px;
+}
+
+.hello {
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.home h1 {
+    font-size: 55px;
+
+    color: #0ea5e9;
+
+    margin-bottom: 10px;
+}
+
+.home h2 {
+    font-size: 25px;
+
+    margin-bottom: 18px;
+}
+
+.home-text {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.main-button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #0ea5e9;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: #0284c7;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 45px;
+
+    color: #111827;
+}
+
+.section-title::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    height: 4px;
+
+    background-color: #0ea5e9;
+
+    margin: 12px auto;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-box {
+    max-width: 850px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    text-align: center;
+}
+
+.about-box p {
+    margin-bottom: 15px;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects-section {
+    background-color: #eef6fb;
+}
+
+.project-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 320px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.project-icon {
+    font-size: 40px;
+
+    color: #0ea5e9;
+
+    margin-bottom: 18px;
+}
+
+.project-card h3 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.technology span {
+    display: inline-block;
+
+    background-color: #e0f2fe;
+
+    color: #0369a1;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    margin: 3px;
+
+    font-size: 13px;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills-container {
+    max-width: 850px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+.skill {
+    background-color: white;
+
+    padding: 18px 25px;
+
+    min-width: 120px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.skill i {
+    color: #0ea5e9;
+
+    font-size: 20px;
+}
+
+.skill:hover {
+    background-color: #0ea5e9;
+
+    color: white;
+
+    transform: translateY(-5px);
+}
+
+.skill:hover i {
+    color: white;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    background-color: #eef6fb;
+
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 45px;
+}
+
+.contact-item {
+    background-color: white;
+
+    width: 250px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-item i {
+    font-size: 30px;
+
+    color: #0ea5e9;
+
+    margin-bottom: 12px;
+}
+
+.contact-item h3 {
+    margin-bottom: 8px;
+}
+
+.contact-item p {
+    color: #555;
+}
+
+
+/* ================= SOCIAL LINKS ================= */
+
+.social-links {
+    margin-bottom: 30px;
+}
+
+.social-links h3 {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+}
+
+.social {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    margin: 5px;
+
+    transition: 0.3s;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.github {
+    background-color: #24292e;
+}
+
+.social:hover {
+    transform: translateY(-3px);
+
+    opacity: 0.85;
+}
+
+.social i {
+    margin-right: 8px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+    }
+
+    .home h2 {
+        font-size: 20px;
+    }
+
+    .home-text {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .project-card {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+}
